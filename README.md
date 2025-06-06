@@ -32,7 +32,7 @@ terraform -chdir=terraform apply
 
 ### GitHub Actions workflow
 
-The workflow defined in `.github/workflows/terraform.yml` automatically packages the Lambda code, initializes Terraform and applies the configuration when changes are pushed to the `main` branch.
+The workflow defined in `.github/workflows/terraform.yml` automatically packages the Lambda code, initializes Terraform and applies the configuration after a pull request is merged into the `main` branch.
 
 ### Lambda function
 
